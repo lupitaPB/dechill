@@ -38,8 +38,8 @@ app.get('/ultimodato', async (req, res) => {
     
     // Si hay datos, extraer los campos específicos
     if (data.length > 0) {
-      const { _id, Altura, Temperatura,Frecuencia Cardiaca} = data[0]; // Ajuste aquí para incluir _id si lo necesitas
-      res.json({ _id, Altura, Temperatura,Frecuencia Cardiaca}); // Ajuste aquí para incluir _id si lo necesitas
+      const { _id, Altura, Temperatura,Presion} = data[0]; // Ajuste aquí para incluir _id si lo necesitas
+      res.json({ _id, Altura, Temperatura,Presion}); // Ajuste aquí para incluir _id si lo necesitas
     } else {
       res.status(404).send('No se encontraron datos en la colección');
     }
