@@ -1,7 +1,7 @@
 {
-  "main": "server.js",
+  "main": "apiesta.js",
   "script":{
-    "start": "node ./server.js"
+    "start": "node ./apiesta.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
